@@ -1,0 +1,55 @@
+.container-home{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/images/fondo-2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.home-header{
+    text-align: right;
+    padding-right: 30px;    
+}
+
+.home-header > img{
+    height: 60px;
+}
+
+.home-content{
+   height: inherit;
+}
+
+.home-footer{
+    text-align: center;
+}
+
+button{
+    font-size: 1.2rem;
+    font-family: monospace;
+    width: 300px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    animation-duration: 1s;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    transition: ease-out;
+}
+
+button:active{
+    background-color: #e9297f;
+}
+
+ 
+@keyframes shake {
+    50%{
+        transform: translateX(-8px);
+        background-color: #e9297f;
+    } 
+    100%{
+        transform:  translateX(8px);
+    }
+  }
+
